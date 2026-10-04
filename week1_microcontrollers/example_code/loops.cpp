@@ -9,6 +9,11 @@ void loop() {
   // 1. FOR LOOP
   // Useful when you know how many times to repeat.
   //
+  // for (start condition; continue if; iteration) {
+  //    what to do during 1 cycle;
+  // }
+  //
+  // FOR LOOP EXAMPLE
   // int i = 0 -> Create a counter starting at 0.
   // i < 5     -> Check this BEFORE each repetition.
   // i++       -> Add 1 AFTER each repetition.
@@ -22,6 +27,9 @@ void loop() {
 
   // 2. WHILE LOOP
   // Repeats as long as the condition is true.
+  // while (condition) {
+  //    what to do while condition is true
+  // }
   Serial.println("While loop:");
 
   int countdown = 3;

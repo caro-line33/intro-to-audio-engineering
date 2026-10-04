@@ -21,6 +21,8 @@ Disconnect your microcontroller from power before wiring.
 
 The resistor limits the current through the LED. Do not connect the LED without it.
 
+![boards dropdown](.\images\led.jpg)
+
 ## Software
 
 1. Create a variable called `LED_PIN`, with the type `const int` and value `{pin number}` from your board’s pinout diagram. The example uses `D0`; replace it with your chosen pin if needed. Some boards use GPIO numbers instead of `D0` labels.
@@ -57,7 +59,7 @@ This breaks up the code for readability and makes it easier to reuse. Instead of
 ## Code
 
 ```cpp
-const int LED_PIN = D0;
+const int LED_PIN = D0; // REPLACE WITH WHICHEVER PIN YOU ARE USING!!
 
 void setup() {
   pinMode(LED_PIN, OUTPUT);

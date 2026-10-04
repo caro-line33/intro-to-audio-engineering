@@ -1,5 +1,7 @@
 # Getting Started with Git
 
+In this tutorial you will clone this github repository onto your computer so that you can easily pull updates whenever new tutorial materials are uploaded. There is also a short optional guide on navigating the command line, which is generally a useful skill to have. By the end of this tutorial you should have cloned a copy of this repo into a folder on your computer, be able to navigate to the folder in a command line, and be able to pull updates.
+
 ## 1: Installing Git
 
 Follow these steps to install Git and download the workshop files.

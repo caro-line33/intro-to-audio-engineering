@@ -14,12 +14,14 @@ This tutorial uses a **passive piezo buzzer**, which needs a changing signal to 
 
 ## Hardware Connections
 
-Disconnect your microcontroller from power before wiring.
+Disconnect your microcontroller from power (device) before wiring.
 
 1. Connect the buzzer’s **positive (+)** terminal to an output-capable `GPIO` on your microcontroller.
 2. Connect the buzzer’s **negative (−)** terminal to `GND` on your microcontroller. You can also use the breadboard’s `GND` rail if it is connected to the microcontroller’s `GND`.
 
 Use a small piezo buzzer designed for direct GPIO drive. A speaker or higher-current buzzer requires a separate driver circuit.
+
+![boards dropdown](.\images\buzzer.jpg)
 
 ## Software
 

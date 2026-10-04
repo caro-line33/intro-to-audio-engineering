@@ -1,27 +1,44 @@
 # Getting Started With Arduino IDE
 
+In this tutorial we will install Arduino, connect our microcontroller, and flash some code that blinks the on-board LED. The goal of this tutorial is to understand how to set connect your device and upload files.
+
 ## 1. Installation
 
 Download and install **Arduino IDE 2** from the [Arduino website](https://www.arduino.cc/en/software), then open it.
 
 ## 2. Boards Manager
 
-1. Open **Boards Manager** from the left sidebar.
-2. Search for `esp32`.
-3. Install **esp32 by Espressif Systems**, (not **Arduino ESP32 Boards by Arduino**.)
-4. Wait for installation to finish. This may take several minutes.
+### 1. Open **Boards Manager** from the left sidebar. Search for `esp32`.
+
+![boards dropdown](.\images\manager.png)
+
+### 3. Install **esp32 by Espressif Systems**, (not **Arduino ESP32 Boards by Arduino**.)
+
+![boards dropdown](.\images\install.png)
+
+### 4. Wait for installation to finish. This may take several minutes.
 
 ## 3. Connecting to Your Device
 
-1. Open the board dropdown near the top of the IDE.
-2. Connect your **XIAO ESP32S3** to your computer using a **USB data cable**. A charge-only cable will not work. A new port should appear in the dropdown.
-- On Windows, the port usually looks like `COM3` or `COM4`. On macOS, it usually contains `usbmodem`.
-3. Go to **Tools → Board → esp32 → XIAO_ESP32S3**.
+### 1. Open the board dropdown near the top of the IDE.
 
+![boards dropdown](.\images\boards_menu.png)
+
+### 2. Connect your **XIAO ESP32S3** to your computer using a **USB data cable**.
+A charge-only cable will not work. A new port should appear in the dropdown. Select the new board.
+
+![boards dropdown](.\images\new_board.png)
+
+### 3. Go to **Tools → Board → esp32 → XIAO_ESP32S3**.
+
+![boards dropdown](.\images\esp32_board.png)
+
+### 4. Check that your board is connected.
 In the bottom right corner of the screen it should say `ESP32S3 on [port number] connected`. If it says `not connected` then follow the troubleshooting steps below until it has been connected.
 
-<details>
-<summary>Troubleshooting</summary>
+![boards dropdown](.\images\connected.png)
+
+## 4. Troubleshooting Connection
 
 First, check that your cable supports data transfer.
 
@@ -35,17 +52,17 @@ If the board still does not appear, enter bootloader mode:
 
 Bootloader mode prepares the board to receive a program.
 
-</details>
-
-## 4. Flashing Code
+## 5. Flashing Code
 
 Flashing means writing your program to the board's memory.
 
-1. Open **File → Examples → 01.Basics → Blink**.
-2. Check that the correct board and port are selected in the new window.
-3. Click **Upload**, the right-arrow button near the **top-left** corner.
-4. Wait until uploading finishes.
-5. The orange user LED should begin blinking. If it does not start after a successful upload, press **RESET** (top-left button) once.
+### 1. Open **File → Examples → 01.Basics → Blink**.
+
+![boards dropdown](.\images\blinkmenu.png)
+
+### 2. Check that the correct board and port are selected in the new window.
+
+### 3. Click **Upload**, the right-arrow button near the **top-left** corner.
 
 <details><summary>Verify vs. Upload</summary>
 
@@ -54,6 +71,9 @@ Flashing means writing your program to the board's memory.
 
 You can click Upload directly; you do not need to click Verify first.
 </details>
+
+### 4. Wait until uploading finishes.
+The orange user LED should begin blinking. If it does not start after a successful upload, press **RESET** (top-left button) once.
 
 <details>
 <summary>What should I do each time to upload code?</summary>

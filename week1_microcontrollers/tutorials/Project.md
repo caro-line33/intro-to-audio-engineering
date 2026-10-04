@@ -14,7 +14,7 @@ You can refer to the button, buzzer and LED tutorial files for help in each sect
 - Breadboard and jumper wires
 - Data transfer cable
 
-This tutorial uses pin labels `D0` through `D6`. Check your board’s pinout to confirm these labels exist and the selected pins support the required inputs or outputs.
+This tutorial uses pin labels `D0` through `D6`. Check your board’s pinout to confirm these labels exist and the selected pins support the required inputs or outputs. If you are using the example code snippets, make sure that they match the pins you are using.
 
 Disconnect power before changing your wiring.
 
