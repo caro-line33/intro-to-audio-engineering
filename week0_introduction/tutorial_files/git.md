@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started with Git
 
 ## 1: Installing Git
 
